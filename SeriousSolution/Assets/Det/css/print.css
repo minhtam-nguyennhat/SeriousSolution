@@ -1,0 +1,161 @@
+/*@media print {*/
+
+@page {
+    margin: 0.5cm;
+}
+
+body {
+    overflow-x: visible;
+}
+
+*,
+*:before,
+*:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+a,
+a:visited {
+    text-decoration: underline;
+}
+
+a[href]:after {
+    content: " (" attr(href) ")";
+}
+
+abbr[title]:after {
+    content: " (" attr(title) ")";
+}
+
+a[href^="#"]:after,
+a[href^="javascript:"]:after {
+    content: "";
+}
+
+pre,
+blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+
+thead {
+    display: table-header-group;
+}
+
+tr,
+img {
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 300px !important;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p,
+h2,
+h3 {
+    orphans: 3;
+    widows: 3;
+}
+
+h2,
+h3 {
+    page-break-after: avoid;
+}
+.jumbotron {
+    padding: 0px;
+}
+.panel-body {
+    border: none!important;
+}
+.panel-group .panel {
+    border-radius: 0;
+    border: none;
+}
+#page-wrapper {
+    margin: 0 !important;
+    position: relative;
+    left:0 !important;
+    top: 0;
+}
+
+#fixed {
+    left: 0 !important;
+    position: relative !important;
+}
+.collapse {
+    display: block!important;
+}
+.fh-breadcrumb {
+    padding-top: 0!important;
+    height: auto;
+    top: 0;
+}
+.slimScrollDiv,
+.full-height-scroll {
+    overflow: scroll!important;
+    width: 100%!important;
+    border: none!important;
+    height: auto!important;
+}
+.full-height {
+    height: auto!important;
+}
+.hr-line-dashed {
+    display: none;
+}
+.ibox-title,
+.ibox-content {
+    border: none;
+}
+.ibox-title {
+    font-size: 17px;
+    padding-left: 0;
+}
+.ibox a {
+    text-decoration: none;
+}
+.panel-heading {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+.ibox,
+.white-bg.border-left {
+    border: none!important;
+}
+nav,
+.navbar,
+.skip-main,
+.tabs-container,
+#right-sidebar,
+.right-sidebar-toggle,
+.DTTT_container,
+.btn,
+.dataTables_filter,
+.footer,
+.toast {
+    display: none!important;
+}
+
+.label {
+    border: 1px solid #000;
+}
+
+.table {
+    border-collapse: collapse !important;
+}
+
+td,
+th {
+    background-color: #fff !important;
+}
+
+
+

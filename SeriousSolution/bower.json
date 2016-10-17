@@ -1,0 +1,11 @@
+{
+  "name": "aspnet-project",
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "leaflet": "^1.0.1",
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.16.4",
+    "font-awesome": "^4.6.3"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "directory": "bower-lib",
+  "proxy": "http://txngu4:An0ther12492@proxy-corp.corp.qed.qld.gov.au:80",
+  "https-proxy": "http://txngu4:An0ther12492@proxy-corp.corp.qed.qld.gov.au:80"
+}

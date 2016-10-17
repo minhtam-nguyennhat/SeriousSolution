@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+
+<html>
+<!--head section -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Queensland Government | @ViewBag.Title</title>
+  <link rel="shortcut icon" href="~/Assets/images/favicon.ico">
+  <!-- main css -->
+  <link href="~/bower-lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+  <link href="~/bower-lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="~/Assets/Det/css/animate.css" rel="stylesheet" />
+  <link href="~/Assets/Det/css/style.css" rel="stylesheet" />
+  <link href="~/Assets/Det/css/skins.css" rel="stylesheet" />
+  <link href="~/Assets/Det/css/print.css" rel="stylesheet" media="print" />
+</head>
+<!--end head section-->
+<!--body section-->
+<body class="layout7 no-skin-config relative-header menu-hidden-by-default">
+
+  <!-- Skip to content link must be present for accessibility, it only appears when using tab key for navigating-->
+  <div id="access" tabindex="0">
+    <ul>
+      <li><a href="#mainContent">Skip to content</a> <span aria-hidden="true">|</span></li>
+      <li><a href="#mainNav">Skip to main navigation</a> <span aria-hidden="true">|</span></li>
+      <li><a href="#SecondaryNav">Skip to sidebar navigation</a></li>
+      <li class="pull-right">
+        <a href="http://www.qld.gov.au/help/accessibility/keyboard.html#section-aria-keyboard-navigation">
+          Use tab and cursor keys to move around the page (more information)
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!--main section-->
+  <main id="wrapper">
+    <section id="page-wrapper" class="white-bg">
+      <!--header-->
+      <header class="cd-auto-hide-header">
+        <!--logo-->
+        <div class="logo">
+          <a href="javascript:" id="logo">
+            <span class="QLD-Logo-in-one-line-stacked-beside-copy text-center center-block"></span>
+          </a>
+        </div>
+        <!--end logo-->
+
+        <!--top nav bar-->
+        <nav class="cd-primary-nav" id="mainNav" role="navigation">
+          <ul id="cd-navigation">
+            <li><a href="http://education.qld.gov.au/sitemap/"><span class="fa fa-sitemap"></span> Site map</a></li>
+            <li><a href="http://education.qld.gov.au/corporate/contact-us.html"><span class="fa fa-envelope"></span> Contact us</a></li> <!-- email to PMRB -->
+            <li><a href="#"><span class="fa fa-info"></span> Help</a></li> <!-- link to help document -->
+            <li>
+              <span class="flexSearch"><input type="search" placeholder="Search"></span>
+            </li>
+            <li><img class="det-branding" alt="Department of Education and Training" src="~/Assets/Det/images/det-black.png"></li>
+          </ul>
+        </nav>
+        <!--end top nav bar-->
+
+        <!-- horizontal navbar -->
+        <nav class="cd-secondary-nav nav navbar-nav" id="navbar" tabindex="0" role="navigation">
+          <ul>
+            <li><a href="http://education.qld.gov.au/" class="animated fadeIn">Home</a></li>
+            <li><a href="http://education.qld.gov.au/students/" class="animated fadeIn">Students</a></li>
+            <li><a href="http://education.qld.gov.au/parents/" class="animated fadeIn">Parents and carers</a></li>
+            <li><a href="http://education.qld.gov.au/international/" class="animated fadeIn">International students</a></li>
+            <li><a href="http://education.qld.gov.au/schools/" class="animated fadeIn">Schools and educators</a></li>
+            <li><a href="http://education.qld.gov.au/public_media/" class="animated fadeIn">School holidays</a></li>
+            <li><a href="http://education.qld.gov.au/directory/" class="active animated fadeIn">Directories</a> </li>
+            <li><a href="http://education.qld.gov.au/hr/" class="animated fadeIn">Jobs</a></li>
+            <li><a href="http://education.qld.gov.au/corporate/" class="animated fadeIn">About us</a></li>
+
+            <li class="dropdown active">
+              <a aria-expanded="false" role="button" href="javascript:" class="dropdown-toggle" data-toggle="dropdown"> Dropdown <span class="caret"></span></a>
+              <ul role="menu" class="dropdown-menu">
+                <li><a href="javascript:">Menu item</a></li>
+                <li><a href="javascript:">Menu item</a></li>
+                <li><a href="javascript:">Menu item</a></li>
+                <li><a href="javascript:">Menu item</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- end horizontal navbar -->
+      </header>
+      <!--end header-->
+
+      <!--main content-->
+      <div class="fh-breadcrumb cd-content">
+        <div id="main" tabindex="-1">
+          <div class="transparent-bg">
+            <div class="element-detail-box padded" id="mainContent">
+              <div id="content" class="padded">
+                <div class="row">
+                  @RenderBody()
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end main content-->
+
+      <!--footer-->
+      <footer class="footer fixed footer-black">
+        <small class="pull-right">
+          <a href="http://education.qld.gov.au/home/copyr.html" target="_blank">Copyright <sup class="fa fa-external-link small"></sup></a> |
+          <a href="http://education.qld.gov.au/home/copyr.html#disclaimer" target="_blank">Disclaimer <sup class="fa fa-external-link small"></sup></a> |
+          <a href="http://education.qld.gov.au/home/privacy.html" target="_blank">Privacy <sup class="fa fa-external-link small"></sup></a> |
+          <a href="http://education.qld.gov.au/about/access/keys.html" target="_blank">Access Keys <sup class="fa fa-external-link small"></sup></a> |
+          <a href="http://www.qld.gov.au/other_languages/index.html" target="_blank">Other Languages <sup class="fa fa-external-link small"></sup></a>
+        </small>
+        <div>
+          <small>© <strong>Queensland Government</strong> <br class="visible-xs-block" />(Department of Education and Training) 2016</small>
+        </div>
+      </footer>
+      <a href="#wrapper" id="totop" style="display: inline;" title="Back to Top"><i class="fa fa-chevron-up"></i></a>
+      <!--end footer-->
+    </section>
+  </main>
+  <!--end main section-->
+
+  <!-- shadow layer visible when navigation is visible -->
+  <div class="cd-overlay"></div>
+
+  <!--main scripts-->
+  <script src="~/bower-lib/jquery/dist/jquery.js"></script>
+  <script src="~/bower-lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="~/Assets/Det/js/jquery.metisMenu.js"></script>
+  <script src="~/Assets/Det/js/jquery.slimscroll.js"></script>
+  <!--end main scripts-->
+  <!-- other scritps -->
+  <script src="~/Assets/Det/js/jquery.smooth-scroll.js"></script>
+  <script src="~/Assets/Det/js/nav-right-bold.js"></script>
+  <script src="~/Assets/Det/js/auto-hide-navigation.js"></script>
+  <script src="~/Assets/Det/js/bootstrap-accessibility.js"></script>
+  <script src="~/Assets/Det/js/custom.js"></script>
+  <script src="~/Assets/Det/js/pace.min.js"></script>
+  <!-- end other scritps -->
+  <!-- Sticky menu script -->
+  <script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            $headerHeight = $('header').outerHeight();
+            if ($(window).scrollTop() > $headerHeight) {
+                $('.navbar-horizontal').addClass('sticky-navbar animated fadeInDown');
+            } else {
+                $('.navbar-horizontal').removeClass('sticky-navbar animated fadeInDown');
+            }
+        });
+    });
+  </script>
+  <!-- end Sticky menu script -->
+</body>
+<!--end body section-->
+
+</html>

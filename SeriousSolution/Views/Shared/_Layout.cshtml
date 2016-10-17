@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Queensland Government | @ViewBag.Title</title>
-  <link rel="shortcut icon" href="~/Assets/images/favicon.ico">
+  <link rel="shortcut icon" href="~/Assets/Det/images/favicon.ico">
   <!-- main css -->
   <link href="~/bower-lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
   <link href="~/bower-lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -15,6 +15,8 @@
   <link href="~/Assets/Det/css/style.css" rel="stylesheet" />
   <link href="~/Assets/Det/css/skins.css" rel="stylesheet" />
   <link href="~/Assets/Det/css/print.css" rel="stylesheet" media="print" />
+  <!-- det plugins -->
+  <link href="~/Assets/Det/css/tabdrop.css" rel="stylesheet" />
 </head>
 <!--end head section-->
 <!--body section-->
@@ -140,6 +142,7 @@
   <script src="~/Assets/Det/js/bootstrap-accessibility.js"></script>
   <script src="~/Assets/Det/js/custom.js"></script>
   <script src="~/Assets/Det/js/pace.min.js"></script>
+  <script src="~/Assets/Det/js/bootstrap-tabdrop.js"></script>
   <!-- end other scritps -->
   <!-- Sticky menu script -->
   <script>
@@ -155,6 +158,7 @@
     });
   </script>
   <!-- end Sticky menu script -->
+  @RenderSection("Scripts",false)
 </body>
 <!--end body section-->
 

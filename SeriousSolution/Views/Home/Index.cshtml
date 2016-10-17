@@ -6,3 +6,48 @@
 <h1>Find a School</h1>
 
 @RenderPage("~/Views/Shared/_InformationPanels.cshtml")
+
+<div class="col-lg-12">
+  <div class="tabbable tabs-container">
+
+    <ul class="nav nav-tabs tabdrop" id="example-one" role="tablist">
+      <li role="presentation" class="active"><a href="#tab4" data-toggle="tab" role="tab" aria-selected="false" aria-controls="tab4">State schools</a></li>
+      <li role="presentation"><a href="#tab5" data-toggle="tab" role="tab" aria-selected="false" aria-controls="tab5">Non-state school</a></li>
+      <li role="presentation"><a href="#tab5" data-toggle="tab" role="tab" aria-selected="false" aria-controls="tab7">All schools and education centres</a></li>
+      <li role="presentation"><a href="#tab6" data-toggle="tab" role="tab" aria-selected="false" aria-controls="tab6">Organisational units</a></li>
+    </ul>
+
+    <div class="tab-content">
+
+      <div class="tab-pane active" id="tab4">
+        <div class="panel-body">
+          <form>
+            <div class="input-group">
+              <input type="text" placeholder="Please enter your search here" name="search" class="form-control input-lg">
+              <div class="input-group-btn">
+                <button class="btn btn-lg btn-outline btn-primary" type="submit">
+                  Search
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="tab5"><div class="panel-body">2</div></div>
+
+      <div class="tab-pane" id="tab6"><div class="panel-body">3</div></div>
+    </div>
+
+  </div>
+</div>
+
+
+
+@section Scripts {
+  <script type="text/javascript">
+    $(function () {
+      $('.nav-tabs.tabdrop#example-one').tabdrop({ text: 'More options' });
+    });
+  </script>
+}

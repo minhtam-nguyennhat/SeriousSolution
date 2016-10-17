@@ -93,6 +93,7 @@
     <Content Include="Assets\Det\css\print.css" />
     <Content Include="Assets\Det\css\skins.css" />
     <Content Include="Assets\Det\css\style.css" />
+    <Content Include="Assets\Det\css\tabdrop.css" />
     <Content Include="Assets\Det\fonts\det-font-family.svg" />
     <Content Include="Assets\Det\fonts\QLD-Logo-WebFont.svg" />
     <Content Include="Assets\Det\images\det-black.png" />
@@ -101,6 +102,7 @@
     <Content Include="Assets\Det\images\qld-government-logo-287x50%402x.png" />
     <Content Include="Assets\Det\js\auto-hide-navigation.js" />
     <Content Include="Assets\Det\js\bootstrap-accessibility.js" />
+    <Content Include="Assets\Det\js\bootstrap-tabdrop.js" />
     <Content Include="Assets\Det\js\custom.js" />
     <Content Include="Assets\Det\js\jquery.metisMenu.js" />
     <Content Include="Assets\Det\js\jquery.slimscroll.js" />

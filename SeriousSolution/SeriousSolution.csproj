@@ -111,7 +111,9 @@
     <Content Include="Assets\Det\js\nav-right-bold.js" />
     <Content Include="Assets\Det\js\pace.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="src\index.js" />
     <Content Include="Web.config" />
+    <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -138,6 +140,7 @@
     <Content Include="Views\Shared\_InformationPanels.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -148,6 +151,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Assets\Det\fonts\OpenSans\" />
+    <Folder Include="Assets\dist\" />
     <Folder Include="Models\" />
     <Folder Include="Typescripts\" />
   </ItemGroup>

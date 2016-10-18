@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "main",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack"
+  },
   "author": "txngu4",
   "license": "ISC",
   "dependencies": {
@@ -17,6 +19,8 @@
     "gulp-newer": "^1.3.0",
     "gulp-replace": "^0.5.4",
     "typings": "^1.4.0",
-    "vinyl-paths": "^2.1.0"
-  }
+    "vinyl-paths": "^2.1.0",
+    "webpack": "^1.13.2"
+  },
+  "-vs-binding": { "BeforeBuild": [ "build" ] }
 }

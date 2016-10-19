@@ -128,38 +128,32 @@
 
   <!-- shadow layer visible when navigation is visible -->
   <div class="cd-overlay"></div>
+  <!--webpack generated scripts-->
+  <script src="~/Assets/dist/det.bundle.js"></script>
+  <!--end webpack generated scripts-->
 
-  <!--main scripts-->
-  <script src="~/bower-lib/jquery/dist/jquery.js"></script>
-  <script src="~/bower-lib/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="~/Assets/Det/js/jquery.metisMenu.js"></script>
-  <script src="~/Assets/Det/js/jquery.slimscroll.js"></script>
-  <!--end main scripts-->
-  <!-- other scritps -->
-  <script src="~/Assets/Det/js/jquery.smooth-scroll.js"></script>
-  <script src="~/Assets/Det/js/nav-right-bold.js"></script>
-  <script src="~/Assets/Det/js/auto-hide-navigation.js"></script>
-  <script src="~/Assets/Det/js/bootstrap-accessibility.js"></script>
-  <script src="~/Assets/Det/js/custom.js"></script>
-  <script src="~/Assets/Det/js/pace.min.js"></script>
-  <script src="~/Assets/Det/js/bootstrap-tabdrop.js"></script>
-  <!-- end other scritps -->
-  <!-- Sticky menu script -->
-  <script>
-    $(document).ready(function () {
-        $(window).scroll(function () {
-            $headerHeight = $('header').outerHeight();
-            if ($(window).scrollTop() > $headerHeight) {
-                $('.navbar-horizontal').addClass('sticky-navbar animated fadeInDown');
-            } else {
-                $('.navbar-horizontal').removeClass('sticky-navbar animated fadeInDown');
-            }
-        });
-    });
-  </script>
-  <!-- end Sticky menu script -->
   @RenderSection("Scripts",false)
 </body>
 <!--end body section-->
 
 </html>
+
+
+
+
+
+  <!--main scripts-->
+@*<script src="~/bower-lib/jquery/dist/jquery.js"></script>
+  <script src="~/bower-lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="~/Assets/Det/js/jquery.metisMenu.js"></script>
+  <script src="~/Assets/Det/js/jquery.slimscroll.js"></script>*@
+<!--end main scripts-->
+<!-- other scritps -->
+@*<script src="~/Assets/Det/js/jquery.smooth-scroll.js"></script>
+  <script src="~/Assets/Det/js/nav-right-bold.js"></script>
+  <script src="~/Assets/Det/js/auto-hide-navigation.js"></script>
+  <script src="~/Assets/Det/js/bootstrap-accessibility.js"></script>
+  <script src="~/Assets/Det/js/custom.js"></script>
+  <script src="~/Assets/Det/js/pace.min.js"></script>
+  <script src="~/Assets/Det/js/bootstrap-tabdrop.js"></script>*@
+<!-- end other scritps -->

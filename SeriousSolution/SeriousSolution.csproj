@@ -111,7 +111,6 @@
     <Content Include="Assets\Det\js\nav-right-bold.js" />
     <Content Include="Assets\Det\js\pace.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="src\index.js" />
     <Content Include="Web.config" />
     <Content Include="webpack.config.js" />
   </ItemGroup>
@@ -153,6 +152,7 @@
     <Folder Include="Assets\Det\fonts\OpenSans\" />
     <Folder Include="Assets\dist\" />
     <Folder Include="Models\" />
+    <Folder Include="src\" />
     <Folder Include="Typescripts\" />
   </ItemGroup>
   <PropertyGroup>

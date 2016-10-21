@@ -7,13 +7,6 @@ var config = {
     path: './Assets/dist',
     filename: 'det.bundle.js'
   },
-  resolve: {
-    alias: {
-      bootstrap: path.resolve('./bower-lib/bootstrap/dist/js/bootstrap.js'),
-      tabdrop: path.resolve('./Assets/Det/js/bootstrap-tabdrop.js'),
-      smoothScroll: path.resolve('./Assets/Det/js/jquery.smooth-scroll.js')
-    }
-  },
   plugins: [
     new webpack.ProvidePlugin({
       $: "jquery",
@@ -21,6 +14,31 @@ var config = {
       "window.jQuery": "jquery"
     })
   ]
+  //,module: {
+  //  //https://cloud.githubusercontent.com/assets/4727090/9842301/d437160e-5ade-11e5-9833-4942d1c60b8a.png
+  //  loaders: [
+  //    {
+  //      test: /\.css$/,
+  //      loader: 'css'
+  //    },
+  //    {
+  //      test: /\.eot$/,
+  //      loader: 'file'
+  //    },
+  //    {
+  //      test: /\.(woff|woff2)$/,
+  //      loader: 'url?limit=50000'
+  //    },
+  //    {
+  //      test: /\.ttf$/,
+  //      loader: 'url?limit=50000&mimetype=application/octet-stream'
+  //    },
+  //    {
+  //      test: /\.(svg|png)$/,
+  //      loader: 'url?limit=50000&mimetype=image/svg+xml'
+  //    }
+  //  ]
+  //}
 }
 
 module.exports = config;
@@ -62,4 +80,11 @@ module.exports = config;
 //    tabdrop: path.resolve('./Assets/Det/js/bootstrap-tabdrop.js'),
 //    smoothScroll: path.resolve('./Assets/Det/js/jquery.smooth-scroll.js')
 //  }
+//}
+
+//resolve: {
+//    alias: {
+//      jquery: path.resolve(__dirname, './bower-lib/jquery/dist/jquery'),
+//      bootstrap: path.resolve(__dirname, './bower-lib/bootstrap/dist/js/bootstrap')
+//    }
 //}

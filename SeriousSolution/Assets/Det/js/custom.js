@@ -1,14 +1,32 @@
+// core vendors
+require('bootstrap');
+require('imports?this=>window!./modernizr.js');
+require('./jquery.metisMenu.js');
+require('./jquery.slimscroll.js');
+// end core vendors
+
+// additional vendors
+require('./jquery.smooth-scroll.js');
+require('./auto-hide-navigation.js');
+require('./bootstrap-accessibility.js');
+require('./pace.min.js');
+require('./bootstrap-tabdrop.js');
+// end additional vendors
+
+// core vendor css
+//require('bootstrap/dist/css/bootstrap.css');
+//require('../css/skins.css');
+//require('../css/animate.css');
+//require('../css/tabdrop.css');
+// end core vendor css
+
+// JavaScript source code
 /*
  *
  *   Custom.js
  *   version 1.13
  *
  */
-
-require('bootstrap');
-require('tabdrop');
-require('smoothScroll');
-
 $(document).ready(function () {
 
   // Accessibility Bar
@@ -216,7 +234,6 @@ $(document).ready(function () {
   // Tabdrop config
   $('.nav-tabs.tabdrop#example-one').tabdrop({ text: 'More options' });
 });
-
 
 // Minimalize menu when screen is less than 1025px
 $(window).bind("resize", function () {

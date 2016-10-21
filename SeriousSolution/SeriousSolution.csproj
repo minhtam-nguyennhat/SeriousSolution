@@ -90,11 +90,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Det\css\animate.css" />
+    <Content Include="Assets\Det\css\font-awesome.css" />
     <Content Include="Assets\Det\css\print.css" />
     <Content Include="Assets\Det\css\skins.css" />
     <Content Include="Assets\Det\css\style.css" />
     <Content Include="Assets\Det\css\tabdrop.css" />
     <Content Include="Assets\Det\fonts\det-font-family.svg" />
+    <Content Include="Assets\Det\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\Det\fonts\QLD-Logo-WebFont.svg" />
     <Content Include="Assets\Det\images\det-black.png" />
     <Content Include="Assets\Det\images\favicon.ico" />
@@ -140,6 +142,11 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="package.json" />
+    <Content Include="Assets\Det\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\Det\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\Det\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\Det\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\Det\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

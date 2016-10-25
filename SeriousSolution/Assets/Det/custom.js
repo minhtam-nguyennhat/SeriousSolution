@@ -1,24 +1,17 @@
 // core vendors
 require('bootstrap');
-require('imports?this=>window!./modernizr.js');
-require('./jquery.metisMenu.js');
-require('./jquery.slimscroll.js');
+require('imports?this=>window!./js/modernizr.js');
+require('./js/jquery.metisMenu.js');
+require('./js/jquery.slimscroll.js');
 // end core vendors
 
 // additional vendors
-require('./jquery.smooth-scroll.js');
-require('./auto-hide-navigation.js');
-require('./bootstrap-accessibility.js');
-require('./pace.min.js');
-require('./bootstrap-tabdrop.js');
+require('./js/jquery.smooth-scroll.js');
+require('./js/auto-hide-navigation.js');
+require('./js/bootstrap-accessibility.js');
+require('./js/pace.min.js');
+require('./js/bootstrap-tabdrop.js');
 // end additional vendors
-
-// core vendor css
-//require('bootstrap/dist/css/bootstrap.css');
-//require('../css/skins.css');
-//require('../css/animate.css');
-//require('../css/tabdrop.css');
-// end core vendor css
 
 // JavaScript source code
 /*

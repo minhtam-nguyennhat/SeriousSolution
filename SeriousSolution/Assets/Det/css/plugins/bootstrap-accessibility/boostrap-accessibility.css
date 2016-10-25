@@ -1,0 +1,28 @@
+
+.close:hover, .close:focus {
+    outline: dotted 1px #000
+}
+
+.carousel-inner > .item {
+    position: absolute;
+    top: -999999em;
+    display: block;
+    -moz-transition: ease-in-out 0.6s left;
+    -o-transition: ease-in-out 0.6s left;
+    -webkit-transition: ease-in-out 0.6s left;
+    transition: ease-in-out 0.6s left
+}
+
+.carousel-inner > .active {
+    top: 0
+}
+
+.carousel-inner > .active, .carousel-inner > .next, .carousel-inner > .prev {
+    position: relative
+}
+
+.carousel-inner > .next, .carousel-inner > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}

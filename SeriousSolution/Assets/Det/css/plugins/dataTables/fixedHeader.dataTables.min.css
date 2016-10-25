@@ -1,0 +1,29 @@
+table.fixedHeader-floating {
+    position: fixed;
+    color: #000;
+    background-color: #fff;
+    z-index: 5000;
+  left: 266px!important;
+}
+table.fixedHeader-floating th {
+    /*font-weight: normal;
+    font-size: 11px;*/
+}
+
+table.fixedHeader-floating.no-footer {
+    border-bottom-width: 0
+}
+
+table.fixedHeader-locked {
+    position: absolute;
+    background-color: white
+}
+
+table.fixedHeader-locked {
+    position: absolute;
+    background-color: white
+}
+
+table.dataTable {
+    margin-top: 0px !important;
+}

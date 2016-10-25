@@ -1,0 +1,102 @@
+/**
+ * BlankPlate | Yet another HTML5 Starter Kit
+ *
+ * BlankPlate Main stylesheet
+ *
+ * @copyright	Copyright 2012, Dimitris Krestos
+ * @license		Apache License, Version 2.0 (http://www.opensource.org/licenses/apache2.0.php)
+ * @link		http://vdw.staytuned.gr/html5-starter-kit-blankplate/
+ * @package		BlankPlate
+ * @version		v1.2.3
+ */
+
+
+
+
+.hideseek ARTICLE UL {
+	list-style: none;
+	padding: 0 15px;
+	background: #fff;
+}
+
+.hideseek ARTICLE UL a {
+	display: block;
+	padding: 5px 0;
+	font-size: 13px;
+}
+.hideseek ARTICLE UL a:hover {
+	text-decoration: underline;
+}
+.hideseek ARTICLE UL a:before {
+	content: "\f105";
+	display: inline-block;
+	color: #676a6c;
+	padding-right: 4px;
+	font: normal normal normal 25px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+}
+
+.hideseek ARTICLE H4 {
+	color: #E95855;
+	margin-bottom: 10px;
+}
+
+
+
+
+/**
+ * SEARCH
+ *
+ * -------------------------------------------------------------------------------------------------
+ */
+
+
+.hideseek .link {
+	color: white;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 48px;
+	margin-top: 20px;
+	margin-left: 6px;
+	text-decoration: none;
+}
+
+.hideseek .link:hover {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.hideseek .anchorLink {
+	border-bottom: 1px dashed white;
+	color: white;
+	text-decoration: none;
+}
+
+.hideseek .anchorLink:hover {
+	text-decoration: none;
+	border-bottom: none;
+	color: inherit;
+}
+
+.hideseek .screenshot {
+	position: absolute;
+	clip: rect(0 0 0 0);
+}
+
+.hideseek .selected {
+	background: white;
+	padding: 2px 8px;
+}
+
+.hideseek .origin {
+	font-weight: bold;
+	padding-bottom: 5px;
+	padding-top: 7px;
+	border-bottom: 1px dashed #dedede;
+	margin-bottom: 5px;
+}

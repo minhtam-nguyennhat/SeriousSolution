@@ -4,11 +4,17 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 var config = {
   entry: {
-    'det.bundle': ['./Assets/Det/custom.js', './Assets/Det/custom.style.js']
+    'det.bundle': ['./Assets/Det/custom.js', './Assets/Det/custom.style.js'],
+    'angular.app': './src/main.ts',
+    'angular.vendor': './src/vendor.ts',
+    'angular.polyfills': './src/polyfills.ts'
   },
   output: {
     path: './Assets/dist',
     filename: '[name].js'
+  },
+  resolve: {
+    extensions: ['', '.ts', '.js']
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -22,6 +28,10 @@ var config = {
   module: {
     loaders: [
       {
+        test: /\.ts$/,
+        loaders: ['awesome-typescript-loader', 'angular2-template-loader']
+      },
+      {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       },
@@ -32,7 +42,11 @@ var config = {
           emitFile: false,
           name: '/[path][name].[ext]'
         }
-      }
+      },
+       {
+         test: /\.html$/,
+         loader: 'html'
+       }
     ]
   }
 }

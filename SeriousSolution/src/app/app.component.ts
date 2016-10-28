@@ -2,7 +2,6 @@
 
 @Component({
   selector: 'my-app',
-  //template: 'this is some batshit cray stuff'
   templateUrl:'./app.component.html'
 })
 

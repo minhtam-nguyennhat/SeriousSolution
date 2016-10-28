@@ -11,6 +11,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var app_component_1 = require('./app.component');
+var search_tab_component_1 = require('./search-tab/search-tab.component');
+var search_tab_item_component_1 = require('./search-tab/search-tab-item.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -20,7 +22,9 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule
             ],
             declarations: [
-                app_component_1.AppComponent
+                app_component_1.AppComponent,
+                search_tab_component_1.SearchTabComponent,
+                search_tab_item_component_1.SearchTabItemComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

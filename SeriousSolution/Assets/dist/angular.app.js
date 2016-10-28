@@ -34434,6 +34434,8 @@
 	var core_1 = __webpack_require__(3);
 	var platform_browser_1 = __webpack_require__(21);
 	var app_component_1 = __webpack_require__(24);
+	var search_tab_component_1 = __webpack_require__(26);
+	var search_tab_item_component_1 = __webpack_require__(28);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -34443,7 +34445,9 @@
 	                platform_browser_1.BrowserModule
 	            ],
 	            declarations: [
-	                app_component_1.AppComponent
+	                app_component_1.AppComponent,
+	                search_tab_component_1.SearchTabComponent,
+	                search_tab_item_component_1.SearchTabItemComponent
 	            ],
 	            bootstrap: [app_component_1.AppComponent]
 	        }), 
@@ -34475,7 +34479,6 @@
 	    AppComponent = __decorate([
 	        core_1.Component({
 	            selector: 'my-app',
-	            //template: 'this is some batshit cray stuff'
 	            template: __webpack_require__(25)
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -34489,7 +34492,85 @@
 /* 25 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"col-lg-12\">\r\n  <div class=\"tabbable tabs-container\">\r\n\r\n    <ul class=\"nav nav-tabs tabdrop\" role=\"tablist\">\r\n      <li role=\"presentation\" class=\"active\"><a href=\"#tab4\" data-toggle=\"tab\" role=\"tab\" aria-selected=\"false\" aria-controls=\"tab4\">State schools</a></li>\r\n      <li role=\"presentation\"><a href=\"#tab4\" data-toggle=\"tab\" role=\"tab\" aria-selected=\"false\" aria-controls=\"tab4\">Non-state school</a></li>\r\n      <li role=\"presentation\"><a href=\"#tab4\" data-toggle=\"tab\" role=\"tab\" aria-selected=\"false\" aria-controls=\"tab4\">All schools and education centres</a></li>\r\n      <li role=\"presentation\"><a href=\"#tab4\" data-toggle=\"tab\" role=\"tab\" aria-selected=\"false\" aria-controls=\"tab4\">Organisational units</a></li>\r\n    </ul>\r\n\r\n    <div class=\"tab-content\">\r\n\r\n      <div class=\"tab-pane active\" id=\"tab4\">\r\n        <div class=\"panel-body\">\r\n          <div class=\"input-group\">\r\n            <input type=\"text\" placeholder=\"Enter to search specfic or leave blank to search all\" name=\"search\" class=\"form-control input-lg\">\r\n            <div class=\"input-group-btn\">\r\n              <button class=\"btn btn-lg btn-outline btn-primary\" type=\"submit\">\r\n                Search\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n      <div class=\"tab-pane\" id=\"tab5\"><div class=\"panel-body\">2</div></div>\r\n\r\n      <div class=\"tab-pane\" id=\"tab6\"><div class=\"panel-body\">3</div></div>\r\n\r\n      <div class=\"tab-pane\" id=\"tab7\"><div class=\"panel-body\">4</div></div>\r\n    </div>\r\n\r\n  </div>\r\n</div>";
+	module.exports = "\r\n<div class=\"col-lg-12\">\r\n  <search-tab>\r\n    <h3>this is the content of search-tab</h3>\r\n  </search-tab>\r\n</div>";
+
+/***/ },
+/* 26 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var SearchTabComponent = (function () {
+	    function SearchTabComponent() {
+	    }
+	    SearchTabComponent = __decorate([
+	        core_1.Component({
+	            selector: 'search-tab',
+	            template: __webpack_require__(27)
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], SearchTabComponent);
+	    return SearchTabComponent;
+	}());
+	exports.SearchTabComponent = SearchTabComponent;
+	;
+
+
+/***/ },
+/* 27 */
+/***/ function(module, exports) {
+
+	module.exports = "\r\n<div class=\"tabbable tabs-container\">\r\n  <h3>This is search-tab</h3>\r\n\r\n  <ng-content></ng-content>\r\n</div>";
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+	    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+	    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+	    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+	    return c > 3 && r && Object.defineProperty(target, key, r), r;
+	};
+	var __metadata = (this && this.__metadata) || function (k, v) {
+	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+	};
+	var core_1 = __webpack_require__(3);
+	var SearchTabItemComponent = (function () {
+	    function SearchTabItemComponent() {
+	    }
+	    __decorate([
+	        core_1.Input('tab-title'), 
+	        __metadata('design:type', Object)
+	    ], SearchTabItemComponent.prototype, "tabTitle", void 0);
+	    SearchTabItemComponent = __decorate([
+	        core_1.Component({
+	            selector: 'search-tab-item',
+	            template: __webpack_require__(29)
+	        }), 
+	        __metadata('design:paramtypes', [])
+	    ], SearchTabItemComponent);
+	    return SearchTabItemComponent;
+	}());
+	exports.SearchTabItemComponent = SearchTabItemComponent;
+	;
+
+
+/***/ },
+/* 29 */
+/***/ function(module, exports) {
+
+	module.exports = "";
 
 /***/ }
 /******/ ]);

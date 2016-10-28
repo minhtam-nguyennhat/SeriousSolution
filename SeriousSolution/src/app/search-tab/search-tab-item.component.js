@@ -9,17 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var SearchTabItemComponent = (function () {
+    function SearchTabItemComponent() {
     }
-    AppComponent = __decorate([
+    __decorate([
+        core_1.Input('tab-title'), 
+        __metadata('design:type', Object)
+    ], SearchTabItemComponent.prototype, "tabTitle", void 0);
+    SearchTabItemComponent = __decorate([
         core_1.Component({
-            selector: 'my-app',
-            templateUrl: './app.component.html'
+            selector: 'search-tab-item',
+            templateUrl: './search-tab-item.component.html'
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], SearchTabItemComponent);
+    return SearchTabItemComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.SearchTabItemComponent = SearchTabItemComponent;
+;
+//# sourceMappingURL=search-tab-item.component.js.map

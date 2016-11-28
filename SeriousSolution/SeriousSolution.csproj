@@ -361,8 +361,8 @@
     <Content Include="Assets\Det\js\nav-right-bold.js" />
     <Content Include="Assets\Det\js\pace.min.js" />
     <Content Include="Global.asax" />
-    <Content Include="src\app\search-tab\search-tab-item.component.html" />
-    <Content Include="src\app\search-tab\search-tab.component.html" />
+    <Content Include="src\app\tab-panel\tab-panel.component.html" />
+    <Content Include="src\app\tab-panel\tab.component.html" />
     <Content Include="Web.config" />
     <Content Include="webpack.config.js" />
   </ItemGroup>
@@ -469,9 +469,12 @@
   <ItemGroup>
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
-    <TypeScriptCompile Include="src\app\search-tab\search-tab-item.component.ts" />
-    <TypeScriptCompile Include="src\app\search-tab\search-tab.component.ts" />
-    <TypeScriptCompile Include="src\app\search-tab\tab.interface.ts" />
+    <TypeScriptCompile Include="src\app\mission-control\astronaul.component.ts" />
+    <TypeScriptCompile Include="src\app\mission-control\mission-control.component.ts" />
+    <TypeScriptCompile Include="src\app\mission-control\mission.service.ts" />
+    <TypeScriptCompile Include="src\app\tab-panel\tab-panel.component.ts" />
+    <TypeScriptCompile Include="src\app\tab-panel\tab.component.ts" />
+    <TypeScriptCompile Include="src\app\tab-panel\tab.interface.ts" />
     <TypeScriptCompile Include="src\main.ts" />
     <TypeScriptCompile Include="src\polyfills.ts" />
     <TypeScriptCompile Include="src\vendor.ts" />

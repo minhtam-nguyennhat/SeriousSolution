@@ -281,7 +281,7 @@
 	  }
 
 	  // Tabdrop config
-	  $('.nav-tabs.tabdrop#example-one').tabdrop({ text: 'More options' });
+	  $('.nav-tabs.tabdrop').tabdrop({ text: 'More options' });
 	});
 
 	// Minimalize menu when screen is less than 1025px

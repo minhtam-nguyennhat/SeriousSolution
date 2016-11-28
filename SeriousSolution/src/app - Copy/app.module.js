@@ -10,23 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
 var app_component_1 = require('./app.component');
-var tab_panel_component_1 = require('./tab-panel/tab-panel.component');
-var tab_component_1 = require('./tab-panel/tab.component');
+var search_tab_component_1 = require('./search-tab/search-tab.component');
+var search_tab_item_component_1 = require('./search-tab/search-tab-item.component');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule
+                platform_browser_1.BrowserModule
             ],
             declarations: [
                 app_component_1.AppComponent,
-                tab_panel_component_1.TabPanelComponent,
-                tab_component_1.TabComponent
+                search_tab_component_1.SearchTabComponent,
+                search_tab_item_component_1.SearchTabItemComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

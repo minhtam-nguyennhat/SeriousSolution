@@ -1,22 +1,17 @@
 ﻿import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
-
-import { TabPanelComponent } from './tab-panel/tab-panel.component';
-import { TabComponent } from './tab-panel/tab.component';
-
+import { SearchTabComponent } from './search-tab/search-tab.component';
+import { SearchTabItemComponent } from './search-tab/search-tab-item.component';
 
 @NgModule({
   imports: [
     BrowserModule
-    ,FormsModule
   ],
   declarations: [
-    AppComponent
-    , TabPanelComponent
-    , TabComponent
+    AppComponent,
+    SearchTabComponent,
+    SearchTabItemComponent
   ],
   bootstrap: [AppComponent]
 })

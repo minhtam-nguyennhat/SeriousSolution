@@ -1,0 +1,32 @@
+﻿
+<div class="tabbable tabs-container">
+
+  <ul class="nav nav-tabs tabdrop" role="tablist">
+    <li *ngFor="let tab of tabs" 
+        role="presentation">
+      <a data-toggle="tab" 
+         role="tab" 
+         aria-selected="false">
+        {{tab.tabName}}
+      </a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active">
+      <div class="panel-body">
+        <div class="input-group">
+          <input type="text" placeholder="Enter to search specfic or leave blank to search all" name="search" class="form-control input-lg">
+          <div class="input-group-btn">
+            <button class="btn btn-lg btn-outline btn-primary" type="submit">
+              Search
+            </button>
+          </div>
+        </div>
+
+        <ng-content></ng-content>
+      </div>
+    </div>
+  </div>
+
+</div>

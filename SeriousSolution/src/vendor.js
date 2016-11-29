@@ -6,6 +6,4 @@ require('@angular/core');
 require('@angular/common');
 // RxJS
 require('rxjs');
-// Others
-require('lodash');
 //# sourceMappingURL=vendor.js.map

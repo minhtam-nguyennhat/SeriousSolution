@@ -39742,13 +39742,19 @@
 	};
 	var core_1 = __webpack_require__(3);
 	var tab_component_1 = __webpack_require__(31);
-	var _ = __webpack_require__(32);
+	var _ = __webpack_require__(33);
 	var TabPanelComponent = (function () {
 	    function TabPanelComponent() {
-	        console.log(_.VERSION);
+	        console.log('current lodash version in this solution is: ' + _.VERSION);
 	    }
 	    TabPanelComponent.prototype.ngAfterContentInit = function () {
-	        console.log(this.tabs.toArray());
+	        //console.log(this.tabs.toArray());
+	    };
+	    TabPanelComponent.prototype.handleClickEvent = function (tab) {
+	        // reset all tabs
+	        this.tabs.forEach(function (tab) { return tab.active = false; });
+	        // make this tab active
+	        tab.active = true;
 	    };
 	    __decorate([
 	        core_1.ContentChildren(tab_component_1.TabComponent), 
@@ -39757,7 +39763,7 @@
 	    TabPanelComponent = __decorate([
 	        core_1.Component({
 	            selector: 'tab-panel',
-	            template: __webpack_require__(34)
+	            template: __webpack_require__(35)
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], TabPanelComponent);
@@ -39784,6 +39790,7 @@
 	var core_1 = __webpack_require__(3);
 	var TabComponent = (function () {
 	    function TabComponent() {
+	        this.active = false;
 	    }
 	    __decorate([
 	        core_1.Input('name'), 
@@ -39800,7 +39807,7 @@
 	    TabComponent = __decorate([
 	        core_1.Component({
 	            selector: 'tab',
-	            template: "\n<div *ngIf=\"active\">\n<ng-content></ng-content>\n</div>\n"
+	            template: __webpack_require__(32)
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], TabComponent);
@@ -39811,6 +39818,12 @@
 
 /***/ },
 /* 32 */
+/***/ function(module, exports) {
+
+	module.exports = "<div *ngIf=\"active\">\r\n\t<ng-content></ng-content>\r\n</div>";
+
+/***/ },
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global, module) {/**
@@ -56879,10 +56892,10 @@
 	  }
 	}.call(this));
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(33)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(34)(module)))
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports) {
 
 	module.exports = function(module) {
@@ -56898,10 +56911,10 @@
 
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports) {
 
-	module.exports = "\r\n<div class=\"tabbable tabs-container\">\r\n\r\n  <ul class=\"nav nav-tabs tabdrop\" role=\"tablist\">\r\n    <li *ngFor=\"let tab of tabs\" \r\n        [ngClass]=\"{'active':tab.active}\"\r\n        role=\"presentation\">\r\n      <a data-toggle=\"tab\" \r\n         role=\"tab\" \r\n         aria-selected=\"false\">\r\n        {{tab.tabName}}\r\n      </a>\r\n    </li>\r\n  </ul>\r\n\r\n  <div class=\"tab-content\">\r\n    <div class=\"tab-pane active\">\r\n      <div class=\"panel-body\">\r\n        <div class=\"input-group\">\r\n          <input type=\"text\" placeholder=\"Enter to search specfic or leave blank to search all\" name=\"search\" class=\"form-control input-lg\">\r\n          <div class=\"input-group-btn\">\r\n            <button class=\"btn btn-lg btn-outline btn-primary\" type=\"submit\">\r\n              Search\r\n            </button>\r\n          </div>\r\n        </div>\r\n\r\n        <ng-content></ng-content>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>";
+	module.exports = "\r\n<div class=\"tabbable tabs-container\">\r\n\r\n  <ul class=\"nav nav-tabs tabdrop\" role=\"tablist\">\r\n    <li *ngFor=\"let tab of tabs\" \r\n        [ngClass]=\"{'active':tab.active}\"\r\n\t\t  (click)=\"handleClickEvent(tab)\"\r\n        role=\"presentation\">\r\n      <a data-toggle=\"tab\" \r\n         role=\"tab\" \r\n         aria-selected=\"false\">\r\n        {{tab.tabName}}\r\n      </a>\r\n    </li>\r\n  </ul>\r\n\r\n  <div class=\"tab-content\">\r\n    <div class=\"tab-pane active\">\r\n      <div class=\"panel-body\">\r\n        <div class=\"input-group\">\r\n          <input type=\"text\" placeholder=\"Enter to search specfic or leave blank to search all\" name=\"search\" class=\"form-control input-lg\">\r\n          <div class=\"input-group-btn\">\r\n            <button class=\"btn btn-lg btn-outline btn-primary\" type=\"submit\">\r\n              Search\r\n            </button>\r\n          </div>\r\n        </div>\r\n\r\n        <ng-content></ng-content>\r\n      </div>\r\n    </div>\r\n  </div>\r\n\r\n</div>";
 
 /***/ }
 /******/ ]);

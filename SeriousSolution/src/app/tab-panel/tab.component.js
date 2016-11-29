@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var TabComponent = (function () {
     function TabComponent() {
+        this.active = false;
     }
     __decorate([
         core_1.Input('name'), 
@@ -27,7 +28,7 @@ var TabComponent = (function () {
     TabComponent = __decorate([
         core_1.Component({
             selector: 'tab',
-            template: "\n<div *ngIf=\"active\">\n<ng-content></ng-content>\n</div>\n"
+            templateUrl: './tab.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], TabComponent);

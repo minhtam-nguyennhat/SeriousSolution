@@ -12,13 +12,20 @@ import * as _ from 'lodash';
 
 
 export class TabPanelComponent implements AfterContentInit {
-	@ContentChildren(TabComponent) tabs: QueryList<Tab>;
+	@ContentChildren(TabComponent) tabs: QueryList<TabComponent>;
 
 	ngAfterContentInit() {
-		console.log(this.tabs.toArray());
+		//console.log(this.tabs.toArray());
 	}
 
 	constructor() {
-		console.log(_.VERSION);
+		console.log('current lodash version in this solution is: ' + _.VERSION);
+	}
+
+	handleClickEvent(tab: Tab) {
+		// reset all tabs
+		this.tabs.forEach((tab) => tab.active = false);
+		// make this tab active
+		tab.active = true;
 	}
 }

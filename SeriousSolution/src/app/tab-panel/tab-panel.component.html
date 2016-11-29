@@ -4,6 +4,7 @@
   <ul class="nav nav-tabs tabdrop" role="tablist">
     <li *ngFor="let tab of tabs" 
         [ngClass]="{'active':tab.active}"
+		  (click)="handleClickEvent(tab)"
         role="presentation">
       <a data-toggle="tab" 
          role="tab" 

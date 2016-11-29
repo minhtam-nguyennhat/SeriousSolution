@@ -13,10 +13,16 @@ var tab_component_1 = require('./tab.component');
 var _ = require('lodash');
 var TabPanelComponent = (function () {
     function TabPanelComponent() {
-        console.log(_.VERSION);
+        console.log('current lodash version in this solution is: ' + _.VERSION);
     }
     TabPanelComponent.prototype.ngAfterContentInit = function () {
-        console.log(this.tabs.toArray());
+        //console.log(this.tabs.toArray());
+    };
+    TabPanelComponent.prototype.handleClickEvent = function (tab) {
+        // reset all tabs
+        this.tabs.forEach(function (tab) { return tab.active = false; });
+        // make this tab active
+        tab.active = true;
     };
     __decorate([
         core_1.ContentChildren(tab_component_1.TabComponent), 

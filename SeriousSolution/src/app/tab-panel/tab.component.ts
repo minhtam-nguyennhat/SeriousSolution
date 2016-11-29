@@ -3,11 +3,15 @@ import { Tab } from './tab.interface';
 
 @Component({
   selector: 'tab',
-  template:`<ng-content></ng-content>`
+  template: `
+<div *ngIf="active">
+<ng-content></ng-content>
+</div>
+`
 })
 
 export class TabComponent implements Tab {
   @Input('name') tabName: string;
   @Input('key') tabKey: string;
-  @Input() isActive: boolean;
+  @Input() active: boolean;
 }

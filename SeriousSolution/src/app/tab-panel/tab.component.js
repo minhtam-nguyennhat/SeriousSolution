@@ -23,11 +23,11 @@ var TabComponent = (function () {
     __decorate([
         core_1.Input(), 
         __metadata('design:type', Boolean)
-    ], TabComponent.prototype, "isActive", void 0);
+    ], TabComponent.prototype, "active", void 0);
     TabComponent = __decorate([
         core_1.Component({
             selector: 'tab',
-            template: "<ng-content></ng-content>"
+            template: "\n<div *ngIf=\"active\">\n<ng-content></ng-content>\n</div>\n"
         }), 
         __metadata('design:paramtypes', [])
     ], TabComponent);

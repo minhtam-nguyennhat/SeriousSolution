@@ -6,3 +6,6 @@ import '@angular/common';
 
 // RxJS
 import 'rxjs';
+
+// Others
+import 'lodash';

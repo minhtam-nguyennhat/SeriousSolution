@@ -10,8 +10,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var tab_component_1 = require('./tab.component');
+var _ = require('lodash');
 var TabPanelComponent = (function () {
     function TabPanelComponent() {
+        console.log(_.VERSION);
     }
     TabPanelComponent.prototype.ngAfterContentInit = function () {
         console.log(this.tabs.toArray());

@@ -9,9 +9,9 @@ import { Tab } from './tab.interface';
 export class TabComponent implements Tab {
 	@Input('name') tabName: string;
 	@Input('key') tabKey: string;
-	@Input() active: boolean;
+  @Input() active: boolean;
 
 	constructor() {
 		this.active = false;
-	}
+  }
 }

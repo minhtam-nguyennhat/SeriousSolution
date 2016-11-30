@@ -2,13 +2,17 @@
 <div class="tabbable tabs-container">
 
   <ul class="nav nav-tabs tabdrop" role="tablist">
-    <li *ngFor="let tab of tabs" 
+    <li *ngFor="let tab of tabs"
         [ngClass]="{'active':tab.active}"
-		  (click)="handleClickEvent(tab)"
         role="presentation">
-      <a data-toggle="tab" 
-         role="tab" 
-         aria-selected="false">
+      <a data-toggle="tab"
+         role="tab"
+         tabindex="0"
+         (focus)="handleClickEvent(tab)"
+         (click)="handleClickEvent(tab)"
+         [attr.aria-selected]="tab.active"
+         [attr.aria-controls]="tab.active"
+         [attr.aria-expanded]="tab.active">
         {{tab.tabName}}
       </a>
     </li>
@@ -20,7 +24,10 @@
         <div class="input-group">
           <input type="text" placeholder="Enter to search specfic or leave blank to search all" name="search" class="form-control input-lg">
           <div class="input-group-btn">
-            <button class="btn btn-lg btn-outline btn-primary" type="submit">
+            <button class="btn btn-lg btn-outline btn-primary dim" type="reset">
+              Reset
+            </button>
+            <button class="btn btn-lg btn-outline btn-info dim " type="submit">
               Search
             </button>
           </div>

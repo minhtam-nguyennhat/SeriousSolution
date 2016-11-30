@@ -30,7 +30,10 @@ var TabPanelComponent = (function () {
     TabPanelComponent = __decorate([
         core_1.Component({
             selector: 'tab-panel',
-            templateUrl: './tab-panel.component.html'
+            templateUrl: './tab-panel.component.html',
+            styles: [
+                '#searchInput {margin-bottom: .5em;}'
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], TabPanelComponent);

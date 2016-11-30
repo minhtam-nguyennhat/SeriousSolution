@@ -11,7 +11,10 @@ import * as _ from 'lodash';
 
 @Component({
 	selector: 'tab-panel',
-  templateUrl: './tab-panel.component.html'
+  templateUrl: './tab-panel.component.html',
+  styles: [
+    '#searchInput {margin-bottom: .5em;}'
+  ]
 })
 
 

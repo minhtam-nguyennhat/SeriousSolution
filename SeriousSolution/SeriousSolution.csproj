@@ -453,6 +453,7 @@
     <Content Include="Assets\Det\img\Thumbs.db" />
     <Content Include="tsconfig.json" />
     <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\observables-component\data.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -472,6 +473,7 @@
     <TypeScriptCompile Include="src\app\mission-control\astronaul.component.ts" />
     <TypeScriptCompile Include="src\app\mission-control\mission-control.component.ts" />
     <TypeScriptCompile Include="src\app\mission-control\mission.service.ts" />
+    <TypeScriptCompile Include="src\app\observables-component\observables.component.ts" />
     <TypeScriptCompile Include="src\app\tab-panel\tab-panel.component.ts" />
     <TypeScriptCompile Include="src\app\tab-panel\tab.component.ts" />
     <TypeScriptCompile Include="src\app\tab-panel\tab.interface.ts" />

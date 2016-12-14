@@ -10,12 +10,15 @@ import { TabComponent } from './tab-panel/tab.component';
 
 import { ObservablesComponent } from './observables-component/observables.component';
 
+import { Ng2SelectizeModule } from "ng2-selectize";
+
 
 @NgModule({
 	imports: [
 		BrowserModule
 		, FormsModule
-		, HttpModule
+    , HttpModule
+    , Ng2SelectizeModule
 	],
 	declarations: [
 		AppComponent

@@ -219,8 +219,11 @@
     <Content Include="Assets\Det\css\plugins\ladda\ladda.min.css" />
     <Content Include="Assets\Det\css\plugins\nouslider\jquery.nouislider.css" />
     <Content Include="Assets\Det\css\plugins\select2\select2-bootstrap.css" />
+    <Content Include="Assets\Det\css\plugins\select2\select2-spinner.gif" />
     <Content Include="Assets\Det\css\plugins\select2\select2.css" />
     <Content Include="Assets\Det\css\plugins\select2\select2.min.css" />
+    <Content Include="Assets\Det\css\plugins\select2\select2.png" />
+    <Content Include="Assets\Det\css\plugins\select2\select2x2.png" />
     <Content Include="Assets\Det\css\plugins\steps_wizard\jquery.steps.css" />
     <Content Include="Assets\Det\css\plugins\summernote\summernote-bs3.css" />
     <Content Include="Assets\Det\css\plugins\summernote\summernote.css" />

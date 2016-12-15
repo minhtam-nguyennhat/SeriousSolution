@@ -1,5 +1,4 @@
-﻿/// <reference path="../../typings/globals/selectize/index.d.ts" />
-
+﻿
 import { Component } from '@angular/core';
 
 @Component({
@@ -10,18 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   dropdownData: any[] = [
-    { value: 1, label: 'Tam' }
-    , { value: 2, label: 'Tom' }
-    , { value: 3, label: 'Tony' }
+    { id: '1', text: 'Tam' }
+    , { id: '2', text: 'Tom' }
+    , { id: '3', text: 'Tony' }
   ];
-
-  multiSelectDynamicAddConfig: Selectize.IOptions<any, any> = <Selectize.IOptions<any, any>>{
-    persist: true,
-    labelField: 'label',
-    valueField: 'value',
-    plugins: ['remove_button']
-  };
-
-  multiSelectDynamicAddPlaceholder: string = "Placeholder...";
 
 }

@@ -25,10 +25,6 @@
 						<option>4</option>
 						<option>5</option>
 					</select>-->
-          <input type="text" ng2-selectize
-                 [config]="multiSelectDynamicAddConfig"
-                 [options]="dropdownData"
-                 [placeholder]="multiSelectDynamicAddPlaceholder" />
 				</div>
 			</div>
 		</tab>
@@ -52,4 +48,10 @@
 		</tab>
 
 	</tab-panel>
+</div>
+
+<div class="col-lg-12 animated slideInLeft">
+  <select2 
+    [data]="dropdownData">
+  </select2>
 </div>

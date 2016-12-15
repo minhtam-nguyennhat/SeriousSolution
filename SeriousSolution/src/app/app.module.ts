@@ -10,7 +10,8 @@ import { TabComponent } from './tab-panel/tab.component';
 
 import { ObservablesComponent } from './observables-component/observables.component';
 
-import { Ng2SelectizeModule } from "ng2-selectize";
+require('select2');
+import { Select2Component } from 'ng2-select2';
 
 
 @NgModule({
@@ -18,13 +19,13 @@ import { Ng2SelectizeModule } from "ng2-selectize";
 		BrowserModule
 		, FormsModule
     , HttpModule
-    , Ng2SelectizeModule
 	],
 	declarations: [
 		AppComponent
 		, TabPanelComponent
 		, TabComponent
-		, ObservablesComponent
+    , ObservablesComponent
+    , Select2Component
 	],
 	bootstrap: [AppComponent]
 })

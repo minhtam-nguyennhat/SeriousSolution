@@ -7,5 +7,5 @@ require('./css/skins.css');
 // end core vendor css
 
 require('./css/plugins/tab-drop/tabdrop.css');
-require('selectize/dist/css/selectize.css');
-require('selectize/dist/css/selectize.bootstrap3.css');
+require('./css/plugins/select2/select2.css');
+require('./css/plugins/select2/select2-bootstrap.css');

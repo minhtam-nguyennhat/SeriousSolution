@@ -36,7 +36,7 @@ var config = {
         loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       },
       {
-        test: /\.(eot|woff|ttf|svg|png)/,
+        test: /\.(eot|woff|ttf|svg|png|gif)/,
         loader: 'file',
         query: {
           emitFile: false,

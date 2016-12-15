@@ -1,4 +1,3 @@
-/// <reference path="../../typings/globals/selectize/index.d.ts" />
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -13,17 +12,10 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.dropdownData = [
-            { value: 1, label: 'Tam' },
-            { value: 2, label: 'Tom' },
-            { value: 3, label: 'Tony' }
+            { id: '1', text: 'Tam' },
+            { id: '2', text: 'Tom' },
+            { id: '3', text: 'Tony' }
         ];
-        this.multiSelectDynamicAddConfig = {
-            persist: true,
-            labelField: 'label',
-            valueField: 'value',
-            plugins: ['remove_button']
-        };
-        this.multiSelectDynamicAddPlaceholder = "Placeholder...";
     }
     AppComponent = __decorate([
         core_1.Component({

@@ -16,8 +16,7 @@ var app_component_1 = require('./app.component');
 var tab_panel_component_1 = require('./tab-panel/tab-panel.component');
 var tab_component_1 = require('./tab-panel/tab.component');
 var observables_component_1 = require('./observables-component/observables.component');
-require('select2');
-var ng2_select2_1 = require('ng2-select2');
+var multiselect_dropdown_1 = require('angular-2-dropdown-multiselect/src/multiselect-dropdown');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,14 +25,14 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                http_1.HttpModule
+                http_1.HttpModule,
+                multiselect_dropdown_1.MultiselectDropdownModule
             ],
             declarations: [
                 app_component_1.AppComponent,
                 tab_panel_component_1.TabPanelComponent,
                 tab_component_1.TabComponent,
-                observables_component_1.ObservablesComponent,
-                ng2_select2_1.Select2Component
+                observables_component_1.ObservablesComponent
             ],
             bootstrap: [app_component_1.AppComponent]
         }), 

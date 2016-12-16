@@ -12,10 +12,24 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.dropdownData = [
-            { id: '1', text: 'Tam' },
-            { id: '2', text: 'Tom' },
-            { id: '3', text: 'Tony' }
+            { id: 1, name: 'Tam' },
+            { id: 2, name: 'Tom' },
+            { id: 3, name: 'Tony' }
         ];
+        this.dropdownSettingsSingle = {
+            checkedStyle: 'checkboxes',
+            buttonClasses: 'btn btn-outline',
+            autoUnselect: true,
+            selectionLimit: 1,
+            closeOnSelect: true
+        };
+        this.dropdownSettingsMultiple = {
+            checkedStyle: 'checkboxes',
+            buttonClasses: 'btn btn-outline',
+        };
+        this.dropdownText = {
+            defaultTitle: 'Please select a thing ...',
+        };
     }
     AppComponent = __decorate([
         core_1.Component({

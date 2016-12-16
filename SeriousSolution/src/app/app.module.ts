@@ -10,8 +10,7 @@ import { TabComponent } from './tab-panel/tab.component';
 
 import { ObservablesComponent } from './observables-component/observables.component';
 
-require('select2');
-import { Select2Component } from 'ng2-select2';
+import { MultiselectDropdownModule } from 'angular-2-dropdown-multiselect/src/multiselect-dropdown';
 
 
 @NgModule({
@@ -19,13 +18,13 @@ import { Select2Component } from 'ng2-select2';
 		BrowserModule
 		, FormsModule
     , HttpModule
+    , MultiselectDropdownModule
 	],
 	declarations: [
 		AppComponent
 		, TabPanelComponent
 		, TabComponent
     , ObservablesComponent
-    , Select2Component
 	],
 	bootstrap: [AppComponent]
 })
